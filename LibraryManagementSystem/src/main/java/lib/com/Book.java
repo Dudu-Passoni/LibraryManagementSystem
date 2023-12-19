@@ -8,6 +8,7 @@ public class Book {
     private String autor;
     private int quantidade;
 
+
     public void agendar(){
         if(getQuantidade() != 0) {
             setQuantidade(getQuantidade() - 1);
@@ -46,6 +47,32 @@ public class Book {
                     break;
         }
     }
+
+    public void cadastrarLivro(){
+        Scanner Est1 = new Scanner(System.in);
+        System.out.println("What you want to do?\n\n1- Register a new book\n2- Remove an existing book\n3- Exit");
+            switch (Est1.nextInt()){
+                case 1:
+                    Scanner Est2 = new Scanner(System.in);
+                    System.out.println("Name the author please: ");
+                        autor = Est2.nextLine();
+                    System.out.println("The name of the new book: ");
+                        nome = Est2.nextLine();
+                    System.out.println("The book will cost: ");
+                        preco = Est2.nextFloat();
+                    //salvar no banco de dados
+                    System.out.println("A new book was registered!\n");
+                    System.out.println("______________________________________________\n");
+                        break;
+                case 2:
+                    System.out.println("What is the name of the book that you want to remove? ");
+                        Est1.nextLine(); //Fazer a pesquisa do livro e remover do banco de dados
+                        break;
+                default:
+                        break;
+            }
+    }
+
 
     public Book() {
     }

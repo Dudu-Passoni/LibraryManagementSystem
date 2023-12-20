@@ -12,7 +12,7 @@ public class Main {
         int aux =4;
         while(aux == 4) {
             System.out.println("*-------LIBRARY MANAGEMENT SYSTEM-------*\n");
-            System.out.println("What you want to do?\n1- Register a new book\n2- Store books\n3- Show all\n4- Exit");
+            System.out.println("What you want to do?\n1- Register a new book\n2- Store books\n3- Show all\n4- Schedule a book\n5- Exit");
 
             switch (Scn.nextInt()) {
                 case 1:
@@ -27,6 +27,9 @@ public class Main {
                     System.out.println("______________________________________________\n");
                     break;
                 case 4:
+                    b[0].agendar();
+                    break;
+                case 5:
                     System.out.println("Exiting...");
                         aux = 5;
                     break;

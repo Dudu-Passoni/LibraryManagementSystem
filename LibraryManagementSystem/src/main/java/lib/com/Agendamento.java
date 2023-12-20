@@ -14,7 +14,6 @@ public class Agendamento {
                 comprador = myScn.nextLine();
     }
 
-
     public Book getAgendado() {
         return agendado;
     }

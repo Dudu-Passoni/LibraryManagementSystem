@@ -6,10 +6,10 @@ public class Agendamento {
     private Book agendado;
     private String comprador;
 
-
+    //Implementar a conexão com o banco
     public void agendarLivro(){
         agendado.agendar();
-        System.out.println("Digite o nome do comprador:");
+        System.out.println("Buyer's name: ");
             Scanner myScn = new Scanner(System.in);
                 comprador = myScn.nextLine();
     }

@@ -36,10 +36,8 @@ public class Main {
                 default:
                     System.out.println("Please, choose a legal number!");
                     System.out.println("______________________________________________\n");
-
             }
         }
-
 
     }
 }

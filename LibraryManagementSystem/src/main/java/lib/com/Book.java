@@ -21,6 +21,7 @@ public class Book {
         else
             System.out.println("It was not possible to schedule this book.");
     }
+
     public void status(){
         System.out.println("Nome: " + nome
                 + "\nAutor: " + autor
